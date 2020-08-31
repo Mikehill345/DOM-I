@@ -49,8 +49,8 @@ const h4s = document.querySelectorAll('h4')
 const middleImg = document.querySelector('.middle-img')
 const paragraph = document.querySelectorAll('p')
 const button = document.querySelector('.cta-text button')
-
-
+const navBar = document.querySelector('nav')
+const bodys = document.querySelector('body')
 
 
 
@@ -81,8 +81,23 @@ paragraph[6].textContent = '1 (888) 888-8888'
 paragraph[7].textContent = 'sales@greatidea.io'
 paragraph[8].textContent = 'Copyright Great Idea! 2018'
 
+const navStartLink = document.createElement("a");
+navStartLink.textContent = "Dinosaurs";
+navStartLink.href = "#";
+navStartLink.style.color = 'green'
+navBar.prepend(navStartLink)
 
 
 
+const navEndLink = document.createElement("a");
+navEndLink.textContent = "PartyTime";
+navEndLink.href = "#";
+navEndLink.style.color = 'green'
+navBar.append(navEndLink)
 
+
+
+for (let i = 0; i < navItem.length; i++) {
+  navItem[i].style.color = 'green'
+}
 
